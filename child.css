@@ -122,10 +122,11 @@ a {
   }
   .styled-table {
     border-collapse: collapse;
+    padding-left: 33px;
    
     
     
-    font-size: 4.4em;
+    font-size: 1.6rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     min-width: 600px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -135,8 +136,13 @@ a {
     font-size:larger;
     font-family: Times, serif;
     font-weight: bold;
+    font-style: italic;
     
     
+  }
+  .container{
+    display:block;
+    position: relative;
   }
   
 
