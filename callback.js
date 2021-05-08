@@ -1,6 +1,20 @@
 const uname = "admin";
 const pwd = 12345;
 const url ="main.html";
+var toastMixin = Swal.mixin({
+  toast: true,
+  icon: 'success',
+  title: 'General Title',
+  animation: false,
+  position: 'top-right',
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+});
 
 function myLogin(urldata){
   
@@ -14,11 +28,15 @@ function myLogin(urldata){
 
     }
     else{
-      Swal.fire("AWWW..(", "Invalid Username or Password!");
-                            $(".swal2-modal").css('background-color', 'orange');
-                            $(".swal2-modal").css('width', 'auto');
-                            $(".swal2-modal").css('height', '33%');
-                            $(".swal2-modal").css('font-style', 'italic');
+      toastMixin.fire({
+        title: 'Invalid Username or Password',
+        icon: 'error'
+      });
+      // Swal.fire("AWWW..(", "Invalid Username or Password!");
+      //                       $(".swal2-modal").css('background-color', 'orange');
+      //                       $(".swal2-modal").css('width', 'auto');
+      //                       $(".swal2-modal").css('height', '33%');
+      //                       $(".swal2-modal").css('font-style', 'italic');
          
     }
        
