@@ -22,11 +22,32 @@ p{
   padding-left: 37%;
   
 }
+#title{
+  justify-content: center;
+  padding-left: 110px;
+}
 #frm {
-  width: 300px;
+  width: auto;
   border: 10px solid purple;
   padding: 50px;
 
   font-family: 'Times New Roman', Times, serif;
   font-weight: 200;
+}
+@media only screen and (max-width: 768px)  {
+  body{
+   padding-left: 3%;
+   padding-right: 3%;
+   margin-left: 4px;
+   
+  }
+  #title,p{
+   position: relative;
+    
+  }
+  #frm{
+    display: block;
+    justify-content: center;
+    position: relative;
+  }
 }

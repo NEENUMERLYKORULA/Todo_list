@@ -5,9 +5,10 @@ body{
   height: auto;
   max-width: 100%;
 }
-.bd{
-  padding-left: 20%;
-  padding-right: 10%;
+#bd{
+  display: block;
+    padding-left: 20%;
+ 
 
 }
 
@@ -59,10 +60,12 @@ ul li:hover{
   background: darkgreen;
   border-radius: 20px;
   padding: 5px;
-  content: '✔';
+  /* content: '✔'; */
+  content: "\2713";
   transition: 0.5s ease-in-out;
   
 } 
+
 
 a {
   text-decoration: none;
@@ -72,8 +75,8 @@ a {
   margin: 25px 0;
   padding: auto;
   font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  min-width: 700px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .styled-table thead tr {
@@ -109,41 +112,24 @@ a {
   
   text-indent: -9999px;
 }
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block;
+@media only screen and (max-width: 768px)  {
+  #bd{
+    padding-left: 0%;
+    padding-right:6%;
+  }
+  .styled-table{
+    display: block;
+    height: 50%;
+   
+  }
+  .styled-table tr{
+    font-size:larger;
+    font-family: Times, serif;
+    font-weight: bold;
+    
   }
   
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-	
+
+
+
 }

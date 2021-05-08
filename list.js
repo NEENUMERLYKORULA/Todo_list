@@ -116,8 +116,8 @@ function populateRankings(json){
         fetch_data
         .then(function () {  Swal.fire("Congrats!!!", "You have completed 5 tasks!", "success");
                             $(".swal2-modal").css('background-color', 'white');
-                            $(".swal2-modal").css('width', 'auto');
-                            $(".swal2-modal").css('height', 'auto');
+                            $(".swal2-modal").css('width', '38%');
+                            $(".swal2-modal").css('height', '30%');
                             $(".swal2-modal").css('font-style', 'italic');
                             
     
