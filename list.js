@@ -58,6 +58,8 @@ function populateRankings(json){
                     td.id ="peek";
                     checkbox.disabled = true;
                     checkbox.id = "chk";
+                    
+                    
                     // td.className = 'active-row';
                     // console.log(td.className);
                     
@@ -98,8 +100,9 @@ function populateRankings(json){
                 $(this).prop('checked', false);
 
                 counter--;
-                if (counter == 0){
-                    loadRankings();
+                if (counter == 0 ){
+                    // loadRankings();
+                    populateRankings(json);
                     
                     reject("No completed task yet");
                 }
@@ -118,7 +121,7 @@ function populateRankings(json){
                             $(".swal2-modal").css('background-color', 'white');
                             $(".swal2-modal").css('width', '38%');
                             $(".swal2-modal").css('height', '30%');
-                            $(".swal2-modal").css('font-style', 'italic');
+                            $(".swal2-modal").css('font-style', 'normal');
                             
     
         

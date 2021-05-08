@@ -5,7 +5,7 @@ body{
   height: auto;
   max-width: 100%;
 }
-#bd{
+.divtbl{
   display: block;
     padding-left: 20%;
  
@@ -56,12 +56,12 @@ ul li:hover{
   display: inline-block;
   width: 50px;
   height: 25px;
-  /* background: var(--white); */
+  background: var(--white);
   background: darkgreen;
   border-radius: 20px;
   padding: 5px;
-  /* content: '✔'; */
-  content: "\2713";
+  content: '✕';
+  color: #fff;
   transition: 0.5s ease-in-out;
   
 } 
@@ -72,9 +72,9 @@ a {
 }
 .styled-table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 0 0;
   padding: auto;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   min-width: 700px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -113,19 +113,29 @@ a {
   text-indent: -9999px;
 }
 @media only screen and (max-width: 768px)  {
-  #bd{
-    padding-left: 0%;
-    padding-right:6%;
-  }
-  .styled-table{
-    display: block;
-    height: 50%;
+ 
+  .divtbl{
+    
+    
    
+  
   }
+  .styled-table {
+    border-collapse: collapse;
+   
+    
+    
+    font-size: 1.4em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
   .styled-table tr{
     font-size:larger;
     font-family: Times, serif;
     font-weight: bold;
+    
     
   }
   
