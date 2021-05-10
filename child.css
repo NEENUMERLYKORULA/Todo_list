@@ -134,7 +134,7 @@ input[disabled] {
     padding-left: 3px;
     
     
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     min-width: 600px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -163,7 +163,17 @@ input[disabled] {
  
 
 }
+#id{
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background: var(--blue);
+  border-radius: 20px;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
 
+  
+}
 
 
 }
