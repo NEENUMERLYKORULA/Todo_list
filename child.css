@@ -1,17 +1,33 @@
-*{transition:all 0.3s ease-in-out;}
+/* *{transition:all 0.3s ease-in-out;} */
 body{
     background-image: url("bg1.jpg");
   
   height: auto;
   max-width: 100%;
 }
-.divtbl{
-  display: block;
+.container-fluid{
+  
     padding-left: 20%;
+ }
+ input[type=checkbox][disabled]:after{
+ 
+  /* outline:2px solid red;  */
+  /* filter: invert(25%); */
+  content:"\e013";
+ background-color:red;
+ margin:12px;
+padding-left:5px;
+padding-right:3px;
+padding-bottom: 2.5px;
+
+ 
  
 
+;
+  
+  
+  
 }
-
 .container{
   clear:both;
   overflow:auto;
@@ -56,12 +72,12 @@ ul li:hover{
   display: inline-block;
   width: 50px;
   height: 25px;
-  background: var(--white);
+  /* background: var(--white);
   background: darkgreen;
   border-radius: 20px;
   padding: 5px;
   content: '✕';
-  color: #fff;
+  color: #fff; */
   transition: 0.5s ease-in-out;
   
 } 
@@ -70,6 +86,9 @@ ul li:hover{
 a {
   text-decoration: none;
 }
+input[disabled] { 
+  background-color: black;
+  }
 .styled-table {
   border-collapse: collapse;
   margin: 0 0;
@@ -97,7 +116,7 @@ a {
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 44px solid #009879;
 }
 .styled-table tbody tr.active-row {
   font-weight: bold;
@@ -114,16 +133,10 @@ a {
 }
 @media only screen and (max-width: 768px)  {
  
-  .divtbl{
-    
-    
-   
   
-  }
   .styled-table {
     border-collapse: collapse;
-    padding-left: 33px;
-   
+    padding-left: 3px;
     
     
     font-size: 1.6rem;
@@ -141,10 +154,20 @@ a {
     
   }
   .container{
-    display:block;
-    position: relative;
+    display:flex;
+    
   }
+  ul li{
+    display: inline-block; padding-top:20px;
+    padding-left: 0PX;
+    font-size:17px; font-family:raleway;
+  }
+  .container-fluid{
   
+    padding-left: 4px;
+ 
+
+}
 
 
 

@@ -58,10 +58,7 @@ function populateRankings(json){
                     td.id ="peek";
                     checkbox.disabled = true;
                     checkbox.id = "chk";
-                    
-                    
-                    // td.className = 'active-row';
-                    // console.log(td.className);
+                   
                     
                 }
                 else if (row[key] == false){
@@ -119,9 +116,9 @@ function populateRankings(json){
         fetch_data
         .then(function () {  Swal.fire("Congrats!!!", "You have completed 5 tasks!", "success");
                             $(".swal2-modal").css('background-color', 'white');
-                            $(".swal2-modal").css('width', '38%');
-                            $(".swal2-modal").css('height', '30%');
-                            $(".swal2-modal").css('font-style', 'normal');
+                            // $(".swal2-modal").css('width', '38%');
+                            // $(".swal2-modal").css('height', '30%');
+                            // $(".swal2-modal").css('font-style', 'normal');
                             
     
         
